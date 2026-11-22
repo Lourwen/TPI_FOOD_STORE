@@ -1,0 +1,36 @@
+export interface Producto {
+    id: number
+    categoria_id: number
+    nombre: string
+    descripcion: string | null
+    precio_base: string
+    imagen_url: string | null
+    stock: number
+    disponible: boolean
+    activo: boolean
+}
+
+export interface ProductoList {
+    total: number
+    items: Producto[]
+}
+
+export interface ProductoCreate {
+    categoria_id: number
+    nombre: string
+    descripcion?: string | null
+    precio_base: number
+    imagen_url?: string | null
+    stock: number
+    disponible: boolean
+}
+
+export interface ProductoUpdate {
+    categoria_id?: number
+    nombre?: string
+    descripcion?: string | null
+    precio_base?: number
+    imagen_url?: string | null
+    stock?: number
+    disponible?: boolean
+}

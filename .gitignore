@@ -1,0 +1,31 @@
+﻿# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales de Python
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dependencias y compilaciones del frontend
+node_modules/
+dist/
+build/
+coverage/
+
+# IDE y archivos del sistema
+.idea/
+.vscode/
+.DS_Store
+
+# Archivos generados
+out/
+*.log
+
+# Base de datos de pruebas
+backend/food_store_test.db
